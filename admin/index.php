@@ -47,8 +47,8 @@ if (!empty($_SESSION['active'])) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Iniciar Sesión</title>
-    <link rel="stylesheet" type="text/css" href="../assets/css/sb-admin-2.min.css">
-    <link rel="shortcut icon" href="../assets/img/icono.png" />
+    <link rel="stylesheet" type="text/css" href="../pages/css/sb-admin-2.min.css">
+    <link rel="shortcut icon" href="../pages/img/icono.png" />
 </head>
 
 <body class="bg-gradient-primary">
@@ -65,7 +65,7 @@ if (!empty($_SESSION['active'])) {
                         <!-- Nested Row within Card Body -->
                         <div class="row">
                             <div class="col-lg-6 d-none d-lg-block bg-login-image">
-                                <img class="img-thumbnail" src="../assets/img/admin.png" alt="">
+                                <img class="img-thumbnail" src="../pages/img/admin.png" alt="">
                             </div>
                             <div class="col-lg-6">
                                 <div class="p-5">
@@ -98,14 +98,14 @@ if (!empty($_SESSION['active'])) {
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="../assets/js/jquery-3.6.0.min.js"></script>
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../pages/js/jquery-3.6.0.min.js"></script>
+    <script src="../pages/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="../assets/js/jquery.easing.min.js"></script>
+    <script src="../pages/js/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="../assets/js/sb-admin-2.min.js"></script>
+    <script src="../pages/js/sb-admin-2.min.js"></script>
 
 </body>
 

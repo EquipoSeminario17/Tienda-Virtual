@@ -11,12 +11,12 @@ require_once "config/config.php";
     <meta name="author" content="" />
     <title>Carrito de Compras</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/img/carrito.png" />
+    <link rel="icon" type="image/x-icon" href="pages/img/carrito.png" />
     <!-- Bootstrap icons-->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" /> -->
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="assets/css/styles.css" rel="stylesheet" />
-    <link href="assets/css/estilos.css" rel="stylesheet" />
+    <link href="pages/css/styles.css" rel="stylesheet" />
+    <link href="pages/css/estilos.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -36,7 +36,7 @@ require_once "config/config.php";
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
                 <h1 class="display-4 fw-bolder">Mi Carrito</h1>
-                <p class="lead fw-normal text-white-50 mb-0"><h4>Tus Compra es 100% Segura</h4></p>
+                <p class="lead fw-normal text-white-50 mb-0"><h4>Tu Compra es 100% Segura</h4></p>
             </div>
         </div>
     </header>
@@ -80,9 +80,9 @@ require_once "config/config.php";
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="pages/js/jquery-3.6.0.min.js"></script>
     <script src="https://www.paypal.com/sdk/js?client-id=<?php echo CLIENT_ID; ?>&locale=<?php echo LOCALE; ?>"></script>
-    <script src="assets/js/scripts.js"></script>
+    <script src="pages/js/scripts.js"></script>
     <script>
         mostrarCarrito();
 
@@ -115,6 +115,7 @@ require_once "config/config.php";
                             });
                             $('#tblCarrito').html(html);
                             $('#total_pagar').text(res.total);
+
                             paypal.Buttons({
                                 style: {
                                     color: 'blue',

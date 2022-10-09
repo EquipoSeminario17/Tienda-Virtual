@@ -14,7 +14,7 @@ if (isset($_POST)) {
         $tmpname = $img['tmp_name'];
         $fecha = date("YmdHis");
         $foto = $fecha . ".jpg";
-        $destino = "../assets/img/" . $foto;
+        $destino = "../pages/img/" . $foto;
         $query = mysqli_query($conexion, "INSERT INTO productos(nombre, descripcion, precio_normal, precio_rebajado, cantidad, imagen, id_categoria) VALUES ('$nombre', '$descripcion', '$p_normal', '$p_rebajado', $cantidad, '$foto', $categoria)");
         if ($query) {
             if (move_uploaded_file($tmpname, $destino)) {
@@ -49,7 +49,7 @@ include("includes/header.php"); ?>
                     $query = mysqli_query($conexion, "SELECT p.*, c.id AS id_cat, c.categoria FROM productos p INNER JOIN categorias c ON c.id = p.id_categoria ORDER BY p.id DESC");
                     while ($data = mysqli_fetch_assoc($query)) { ?>
                         <tr>
-                            <td><img class="img-thumbnail" src="../assets/img/<?php echo $data['imagen']; ?>" width="50"></td>
+                            <td><img class="img-thumbnail" src="../pages/img/<?php echo $data['imagen']; ?>" width="50"></td>
                             <td><?php echo $data['nombre']; ?></td>
                             <td><?php echo $data['descripcion']; ?></td>
                             <td><?php echo $data['precio_normal']; ?></td>

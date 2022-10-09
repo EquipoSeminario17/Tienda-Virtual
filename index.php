@@ -9,21 +9,24 @@
     <meta name="author" content="" />
     <title>Carrito de Compras</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/img/icon.png" />
+    <link rel="icon" type="image/x-icon" href="pages/img/icon.png" />
     <!-- Bootstrap icons-->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" /> -->
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="assets/css/styles.css" rel="stylesheet" />
-    <link href="assets/css/estilos.css" rel="stylesheet" />
+    <link href="pages/css/styles.css" rel="stylesheet" />
+    <link href="pages/css/estilos.css" rel="stylesheet" />
 </head>
 
 <body>
-    <a href="#" class="btn-flotante" id="btnCarrito"><img src="assets/img/carrito.png" height="50px" width="50px"> <span class="badge bg-success" id="carrito">0</span></a>
+    <div float="left">Hola a todos
+    </div>
+    <a href="#" class="btn-flotante" id="btnCarrito"><img src="pages/img/carrito.png" height="50px" width="50px"> <span class="badge bg-success" id="carrito">0</span></a>
     <!-- Navigation-->
+
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Categorias</a>
+                <a class="navbar-brand" href='index.php'>INICIO</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -62,7 +65,7 @@
                                 <!-- Sale badge-->
                                 <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem"><?php echo ($data['precio_normal'] > $data['precio_rebajado']) ? 'Oferta' : ''; ?></div>
                                 <!-- Product image-->
-                                <img class="card-img-top" src="assets/img/<?php echo $data['imagen']; ?>" alt="..." />
+                                <img class="card-img-top" src="pages/img/<?php echo $data['imagen']; ?>" alt="..." />
                                 <!-- Product details-->
                                 <div class="card-body p-4">
                                     <div class="text-center">
@@ -95,16 +98,22 @@
         </div>
     </section>
     <!-- Footer-->
+     
     <footer class="py-5 bg-dark">
+
         <div class="container">
             <p class="m-0 text-center text-white">Copyright &copy; UDENAR SHOP 2022</p>
         </div>
     </footer>
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
+    <script src="pages/js/jquery-3.6.0.min.js"></script>
+    <script src="pages/js/scripts.js"></script>
+
+
 </body>
 
 </html>
+

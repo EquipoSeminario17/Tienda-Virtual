@@ -27,16 +27,16 @@
 
 
 <!-- Bootstrap core JavaScript-->
-<script src="../assets/js/jquery-3.6.0.min.js"></script>
-<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../pages/js/jquery-3.6.0.min.js"></script>
+<script src="../pages/js/bootstrap.bundle.min.js"></script>
 
 <!-- Core plugin JavaScript-->
-<script src="../assets/js/jquery.easing.min.js"></script>
+<script src="../pages/js/jquery.easing.min.js"></script>
 
 <!-- Custom scripts for all pages-->
-<script src="../assets/js/sb-admin-2.min.js"></script>
-<script src="../assets/js/all.min.js"></script>
-<script src="../assets/js/scripts.js"></script>
+<script src="../pages/js/sb-admin-2.min.js"></script>
+<script src="../pages/js/all.min.js"></script>
+<script src="../pages/js/scripts.js"></script>
 
 
 </body>
